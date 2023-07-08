@@ -1,0 +1,1384 @@
+
+
+Java Fullstack:
+===============
+
+corejava-JSE-->case study
+
+Database-Mysql
+
+Jdbc
+
+Servlets,Jsp
+
+spring 
+
+spring boot		-->case study
+
+Jpa-->hibernate 	-->case study
+
+
+html,css,js,ts,bs,angular -->case study
+
+
+
+Language:
+=========
+
+		english-->Communication humans  26
+		
+Programming Language:
+=====================		
+
+		Communication with machine
+		
+		
+		
+		java,python,c,c++
+		
+		
+			POP       						OOPS
+B,BCPL,COBOL,PHOTON,C....			java,python,c++,.NET....OOPL
+		
+		
+						1)performance --->inheritance,polymorphisam
+						2)security	  --->abstraction and encapsulation
+		
+		
+Why JAVA?
+				welcome excelr-->6
+				print("")							microsoft
+														.net
+			1)Platform Independent
+			2)Garbage Collection  -->garbage collector 
+		
+		java--->sun micro system(Oracle Corporation) -->james gosling
+		
+		JDK-->java development kit 
+		
+		
+		1996-->jdk 1.0
+		
+		
+		
+		2023-->20
+		
+		
+		
+		
+		machine1     	machine2      machine3
+		windows11	 	linux			mac
+		
+		java app
+				WORA
+
+
+		.net
+			-->
+
+2gb
+
+
+JAVA :
+=======		java setup 
+
+
+	keywords :53 keywords -->lowercase 
+	
+				2 -->goto ,const
+	
+java -version
+java version "1.8.0_281"
+Java(TM) SE Runtime Environment (build 1.8.0_281-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.281-b09, mixed mode)
+
+javac -version
+javac 1.8.0_281
+
+
+.java, .py,.css,.js,.ts.......
+
+Execution flow of java application
+
+			javac filename.java					java classname
+
+.java------>	java compiler  ----------->.class--------------->JVM---------->output
+
+								Compailation
+
+
+
+
+class Test
+{
+
+public static void main(String args[])
+{
+System.out.println("welcome to java ");
+
+}
+
+}
+
+Identifiers:
+============
+		any name in java will call it as identifier 
+		
+		a-z
+		A-Z
+		0-9
+		$
+		_
+
+
+
+Variables:
+==========
+	a name given to the memory location
+	
+				contactnum   sandeep trainer      32423423423
+
+syntax:
+
+			datatype varname =value;
+			
+					datatype varname;//declaration
+					varname=value;//intialization
+
+			
+			aadharid
+			contactnum
+			age
+			weight			numeric data 
+			
+			name
+			
+			salary 			12.6
+			....
+			
+			
+				PDT     		NPDT
+			8					class,array,string....
+			
+		number		51-10=41
+			
+			byte	1 byte		-128 to 127
+			short	2 bytes		-32768 to 32767
+			int		4 bytes		-2147483648 to 2147483647
+			long	8 bytes		-2 power 63 to (2 power 63)-1		byte contact=30;
+			
+			float	4 bytes		23.45629103764323f; 5-6
+			double	8 bytes							14-15
+			
+			char 	2 bytes	    c-->ASCII a-97 A-65  english        'M' 'F'
+			
+			boolean	1 bit				true-1 false-0 
+			
+			
+		local variable	-->inside the method 
+		global variable	-->outside the method 
+			
+			
+			
+			
+			
+DataTypes:
+==========
+
+
+IDE 
+
+Eclipse,myeclipse,netbeans,intelji.....vscode,pycharm.... 
+
+
+
+Eclipse IDE for Enterprise Java Developers
+
+
+Diff Kinds Applications Using Java 
+=================================
+								JAVA
+							
+				JSE      				JEE     	    	 					JME		
+corejava,awt,swings,applets		servlet,jsp,spring,mvc...webservices		android
+
+1)standalone/dekstop applications:	local machine  notepad++,eclipse,java,anti virus apps,media player ...
+
+2)web application		gmail-url,fb,insta,amazon.....	URLS
+
+3)distrubuted application	banking app,phonepe,...
+
+4)mobile application		android 	
+
+Java download
+
+
+https://www.oracle.com/in/java/technologies/downloads/#java8-windows
+
+installation process
+
+https://www.javatpoint.com/javafx-how-to-install-java
+
+Variables:
+===========
+
+		local variables :inside the methods
+		
+		global variables: outside the methods 
+		
+Day-2    23-04-23
+		==========
+					instance and static 
+		
+	Syntax:
+	========
+	
+			static keyword 
+					method 
+					variable
+					block
+	
+			non-static/instance
+			
+			without static :instance 
+	
+	
+	memory:
+	=======
+		static variables/properties will get memory space only once at the time class loading into JVM
+	
+		instance variables will get memory space for every object creation
+		
+		class is combination of data members and member functions
+			
+		object :instance of a class
+		
+					A
+					
+					classname objname=new classname();
+					
+						A  a=new A();	
+	
+	Access:
+	=======
+			static variables can be accessed by using classname 
+			instance variables can be accessed by using obj ref 
+	
+
+	
+	Usage :
+	========
+				country,state,clg ,school....common data-->static
+					
+	
+				eid,aadhar,contact,accnt no,...unique data-->instance
+	
+	
+	flow control:
+	-------------
+		if,else,switch,for,while,dowhile
+	
+package(folder),import
+=====================
+		user defined: package name in lower case  
+		predefined
+
+https://docs.oracle.com/javase/8/docs/api/
+
+
+Scanner:
+=======
+import java.util.Scanner;
+
+public class Scanner_Ex {
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);// java.util. ..ctrl+shift+o
+		System.out.println("Enter your 1st number:");
+		int i = scan.nextInt();
+		System.out.println("Enter your 2nd number:");
+		int j = scan.nextInt();
+		System.out.println("Enter your name ");
+		String name=scan.next();
+		System.out.println("Enter your salary ");
+		float salary=scan.nextFloat();
+		System.out.println(i + j);
+		
+		System.out.println(name+" "+salary);
+	}
+}
+
+methods:
+=========
+
+
+
+	public static void main(String[] args) {
+
+
+	}
+	
+	syntax:
+	accessmodifier static/instance returntype methodname(int eid,String ename,float salary){
+	
+	
+	}
+	
+
+	public  void addOfTwo(int a,int b)
+	{
+	
+	System.out.println("add of two numbers "+(a+b));
+	}
+	
+	public  int subOfTwo(int a,int b)
+	{
+	return a-b;
+
+	}
+	static  int mulOfTwo()
+	{
+	int a=12;
+	int b=13;
+	return a*b;
+
+	}
+public   void display()
+	{
+
+System.out.println("hello everyone....");
+	}
+
+Assignment1:
+===============
+complete 6 assignments-->flow control assignments
+
+operators
+
+https://www.geeksforgeeks.org/operators-in-java/
+
+
+29-04-2023:
+=============
+
+
+OOPs
+-------
+
+	OOPS 			   OOPL
+
+features
+				JAVA
+Inheritance				
+polymorphisam			Performance
+
+encapsulation
+abstraction				security
+
+
+
+
+Inheritance: extends ,implements
+
+Aquring the properties/features one class to another class
+
+
+
+		CODE Reusability-->
+
+class A
+{
+
+
+//100 methods+variables......
+
+}
+
+class B  extends A {
+
+
+
+//20 methods
+
+
+}
+
+NOTES:
+	By Default package for every java file  java.lang(no need to import)
+	By Default parent class for every java class  java.lang.Object (no need to extends)
+	
+
+Multiple Inheritance 
+=====================
+
+		many parents and one child 
+
+MI not supported by java through classes
+MI  supported by java through Interfaces
+
+
+abstract and concrete methods
+
+
+abstract method
+
+public abstract void withdraw();
+
+
+non-abstract /concrete
+
+public void displayMsg()
+{
+System.out.println("welcome to java ....");
+}
+
+
+ATM
+
+withdraw     	pinchange
+ministatement	balance enquiry
+
+
+Abstraction:abstract class and interfaces 
+
+
+
+
+class:class is a collection of only concrete methods 
+abstract class:abstract class is a combination of both abstract and concrete methods  0-100%
+interface :	interface is collection of only abstract methods   100%
+	
+https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/
+
+
+class
+abstract class
+interface 
+
+
+MI not supported by java through classes
+MI  supported by java through Interfaces
+
+
+			
+
+interface Parent            interface Parent1
+{							{
+
+void m1();					void m1();
+
+}							}
+
+
+class Child implements Parent,Parent1
+
+{
+main()
+{
+Child child=new Child();
+		child.m1();
+		
+
+}
+void m1(){
+
+
+};	
+}
+Polymorphisam:
+==============
+many forms 
+
+	method overloading
+		
+		method name is same and signature is different 
+								no of params
+								order of params
+								type of params
+		
+		package com.excelr.oops;
+
+public class MethodOverloadingEx {
+
+	public void add(float a, float b) {
+		System.out.println("add of two int's :" + (a + b));
+	}
+
+	public void add(int a, int b) {
+		System.out.println("add of two int's :" + (a + b));
+	}
+
+	public void add(int a, int b, int c) {
+		System.out.println("add of three int's :" + (a + b));
+	}
+
+	public void add(int a, float b) {
+		System.out.println("add of int,float :" + (a + b));
+	}
+
+	public void add(float a, int b) {
+		System.out.println("add of float,int :" + (a + b));
+	}
+
+	public static void main(String[] args) {
+		MethodOverloadingEx obj = new MethodOverloadingEx();
+
+		obj.add(12, 13);
+		obj.add(12.4f, 13.3f);
+		obj.add(12, 13, 3);
+		obj.add(23.5f, 23);
+		obj.add('a', 'b');
+		//type promotion
+	}
+}
+
+https://www.scientecheasy.com/2020/07/type-promotion-method-overloading-java.html/
+
+
+Method Overriding:
+=================
+method name is same implementation is different
+
+
+class A
+{
+
+
+}
+class B{
+
+
+
+}
+
+30-04-2023:
+=============
+
+final,this,super,public,private,protected,default,constructor,Encapsulation
+
+
+final:
+=======
+final we can use before variable,method,class
+
+we can't change final variables  value .
+
+we can't overide final method 
+
+we can't extend final classes 
+
+
+
+Access Modifiers:
+=================
+
+public	:	every where we can access
+
+private	:	class level scope
+
+protected: inside the package everywhere and outside the package in child
+
+default : package level scope 
+
+
+
+constructor:
+=============
+		
+		constructor is a special member function
+			1)intialization of object
+			2)providing default values to the instance variables 
+
+
+this,super:
+===========
+
+this is used to reperesent current class properties (variable,method,object,constructor)
+
+
+super  is used to reperesent parent class properties (variable,method,constructor)
+
+
+
+Encapsulation:
+==============
+	Encapsulation is a process of wrapping the data and corresponding methods together 
+
+
+class Employee
+{
+eid;
+ename;
+esal
+eadd
+email
+desg....    private 
+
+//public setter getter 
+
+}
+
+
+06-05-2023:
+===========
+Exception Handling:
+===================
+
+Exception Handling is mechanisam to convert system defined error messages  into user friendly error messages 
+
+
+
+Problems Without Exception Handling:
+===================================
+
+1)Abnormal termination
+2)system defined error messages 
+
+
+Advantages with exception handling:
+===============================
+
+1)normal termination
+2)user friendly  error messages 
+
+
+try,catch,finally,throw,throws
+
+
+
+try {
+
+error code 
+
+}
+catch()
+{
+handling code 
+
+}
+
+
+catch
+
+
+
+
+
+throw new Exception("......")
+
+
+
+User defined Exception:
+=======================
+
+class AgeNotValidException extends Throwable/Exception/RuntimeException
+{
+AgeNotValidException(String message )
+{
+super(message)
+}
+}
+
+
+Scanner 
+
+	username 
+	password
+	
+		excelr   excler123
+
+		
+	
+	method overriding 
+	
+		method name is same implementation is different
+
+
+13-05-2023:
+===========
+
+
+String ,StringBuffer,StringBuilder:
+==================================
+
+
+if we want to represent group of chars String,StringBuffer,StringBuilder     ""   java.lang
+
+
+	String -->imuttable			fix/final
+	StringBuffer,StringBuilder --->muttable
+	
+	
+			String literal
+			String new keyword 
+	
+	String name="excelr";
+	
+	
+	String name1=new String("excelr")
+	
+	
+	https://www.w3schools.com/java/java_ref_string.asp
+	
+	
+	
+	StringBuffer methods are synchronized 
+	StringBuilder methods are not synchronized 
+	
+	
+	
+	
+	public synchronized void m1()	
+	{										thread -->t1,t2,t3,t4
+	
+	//thread safety
+	}
+	
+	
+	public  void m1()
+	{
+	//no thread safety
+	
+	}
+	
+	
+	int salary=23000;
+		salary=33000;
+	
+	
+	arrays -->group values
+	
+	
+	int salaries[]={12345,2345,54321,423423};	
+	
+			index-->0,1,2,3,4,5.....
+	
+	
+	salaries[0]
+	
+	
+	int ids=new int[5];//0,1,2,3,4
+
+
+14-05-2023
+============
+
+
+
+	Stream of water 
+	Stream of data :stream IO
+	
+	5 streams
+	
+	Character Stream : FileWriter,FileReader,BufferedWriter,BufferedReader,PrintWriter
+	Byte Stream		 :	FileOutputStream,FileInputStream	 2bytes
+	Buffered Stream  : BufferedOutputStream,BufferedInputStream 1024 bytes
+	Data Stream		 :DataInputStream,DataOutputStream
+	Object Stream	 :ObjectOutputStream,ObjectInputStream
+	
+	
+	java.io
+	
+	
+	File --->
+	
+	
+	
+	
+	
+	Multi Threading:
+	================
+	
+Multi tasking:
+==============
+	the process of executing several tasks simultaniously	
+	
+	
+	
+		Process Based Multitasking
+				
+			the process of executing several tasks simultaniously	where each task is seperate independent process.	
+		
+					zoom,notepad++,youtube...
+		Thread based multitasking  :multi threading 
+	
+			the process of executing several tasks simultaniously	where each task  belongs to the same  process.	
+
+			notepad  
+	process:collections/group of threads
+	
+	thread: a smallest unit of process
+	
+	
+	
+	segment 1
+	
+	
+	segement 2
+	
+	
+	
+	segment 3
+	
+	
+	segment n
+	
+	How to create a thread
+	
+		1)by implementing Runnable interface
+		
+		2)by extending Thread class
+	
+	
+	https://www.javamadesoeasy.com/2015/03/thread-states-thread-life-cycle-in-java.html
+	
+	
+	Thread have following states >
+New
+Runnable
+Running
+Waiting/blocked/sleeping
+Terminated (Dead) 
+	
+	
+	Synchronization:
+	===============
+	
+	
+	synchronized
+	
+	
+	Inter Thread Communication:
+	===========================
+	
+	thread communication   wait,notify,notifyAll-->java.lang.Object
+	
+	
+	1-100
+	
+	2 threads
+	
+	even numbers --->2,4,6,8,10....100-->even thread-->waiting -->notify-->Wait
+	odd numbers  --->1,3,5,7,9 . ...99-->odd thread-->waiting-->notify-->wait
+	
+	
+	
+	1,2,3,4,5,6,7,8...100
+	
+	
+	1,2,3
+	
+	
+	variables:only one at a time 
+	
+		int marks=3456;
+		marks=2222;
+	
+	arrays
+			int arr[]={12,23,565,764,32};//4
+			
+			arr[5]=9999;//AIOE
+		arrays are used store group of values 
+		
+		Limitations With Arrays:
+		=======================
+	1.arrays are used to store only simillar/homogeneous data.	
+	2.arrays are fixed in size.
+	3.no utility methods
+		
+		
+Collections:
+============	 java.util	
+	1.Collections are used to store both simillar/homogeneous  and disimilar/heterogeneous data.	
+	2.Collections are not fixed in size or growable in nature 
+	3.lots of  utility methods
+			
+	List:
+	======
+		1.Duplicates are allowed 
+		2.insertion order is preserved 
+		
+		
+		
+		ArrayList is not synchronized 	--10 16...(cc*3/2)+1
+		Vector is synchronized          --10 20
+		
+		
+	Set	
+		
+		//1.Collections are used to store both simillar/homogeneous  and disimilar/heterogeneous data.	
+//2.Collections are not fixed in size or growable in nature 
+//3.lots of  utility methods
+//		
+//Set:
+//======
+//	1.Duplicates are not allowed 
+//	2.insertion order is not preserved 
+
+
+HashSet
+
+	1.Duplicates are not allowed 
+	2.insertion order is not preserved 
+
+LinkedHashSet
+
+	1.Duplicates are not allowed 
+	2.insertion order is  preserved 
+
+TreeSet
+
+	1.Duplicates are not allowed 
+	2.it follows sorting order 
+
+Note: Except treeset and treemap every where heterogeneous data is allowed 
+		
+Comaparable(I):java.lang-->NSO-->compareTo
+
+Comparator (I):java.util-->CSO
+
+
+		
+Map:
+======
+1)Map is not child interface to the collection interface 
+
+2)Map will store the data as a Key,Value(Entry) pair
+
+3)Map is Collection of entries 
+
+	duplicates keys are not allowed 
+	values can be duplicate
+	key,value can be any datatype 
+	
+
+
+HashMap
+		1)duplicates keys are not allowed,values can be duplicate
+		2)insertion order is not preserved
+
+LinkedHashMap
+		1)duplicates are not allowed 
+		2)insertion order is preserved
+	
+TreeMap
+		1)duplicates are not allowed 
+		2)will follow sorting order
+
+
+
+Comparable-->java.lang-->FI-->SAM-->compareTo-->NSO
+Comparator-->java.util-->FI-->SAM-->compare--->CSO
+
+
+Collections Case Study:
+=======================
+
+		ProductManagement Applications:
+		==============================MAP
+		
+		1)Add Product						
+		2)Update Product
+		3)Delete Product
+		4)Get Product
+		5)Get All Products
+		6)Get All Products Between The Prices
+		7)Get All Products By Category
+		8)Exit
+
+
+		Bank Applications:
+		==============================MAP
+		
+		1)Add Account					
+		2)Update Account
+		3)Delete Account
+		4)Get Account Details
+		5)Withdraw
+		6)Deposit
+		7)FundTransfer
+		8)Exit
+
+
+
+
+Lambda Experssion:
+====================Anonymous Function
+
+
+	public int add(int a,int b){
+		int result=a+b;
+		return result;
+	}
+
+	with out modifier/returntype/methodname/parameters DT optional/{}/return/
+	
+	
+	  (a,b)->a+b;
+
+
+
+public void m1(){
+System.out.println("Welcome");
+}
+		
+  ()->System.out.println("Welcome");
+
+		
+		
+	Inteface -->it can have any  number of abstact methods and any number of default and static methods
+	FI		 -->it can have only one abstarct method and any number of default and static methods Ex Comaparable,Comparator,Runnable
+	MarkerInterface-->zero abstract methods ex:Serializable
+	
+		
+		
+	Method reference/constructor reference (::)
+	=======================================
+	
+	
+	
+	DATE AND TIME API :
+	==================
+	LOCALDATE
+	LOCALTIME
+	LOCALDATETIME
+	PERIOD
+	TIMEZONE
+	ZONEID
+	
+				IMUUTABLE
+				
+	Stream API
+	=========== Parallel Programming in java
+
+		stream -->flow of data
+		
+			
+				parallely
+				
+
+			collection/array.stream()
+							parallelStream()
+
+03-06-2023
+Front End:
+==========
+
+	website -->collection/group of web pages 
+
+
+
+			three layers 
+			
+			webpages 
+			
+				static webpage			fb  login
+				dynamic webpage 		fb  home
+
+	
+				HTML-->teamberners lee 1993 1.x
+	
+		5.x
+	Hyper Text MarkUp lang
+	
+	
+		text with in text
+		
+			<h1>welcome to html</h1>   xml  xhtml
+	
+		markup language 
+	
+	predefined 
+	
+	
+	welcome.html
+
+<!Doctype html>
+
+<html>
+
+	<head>
+		loading other html,css,js....files
+	</head>
+	<body>
+	<h1>welcome to html</h1>
+	
+	</body>
+
+</html>
+					browsers-->google(v8),mozilla(chakra),IE(spider monkey)
+					
+						engine 
+						
+						DOM tree
+						
+						
+						
+						
+					
+VsCode
+
+https://code.visualstudio.com/download
+
+
+download this extention
+
+	open in browser
+	
+	
+	
+	Form Tags:
+	===========
+	
+	<form>
+	<input type="text" name="">
+	
+	</form>
+	
+	
+	web storage
+	
+		HTTP -->stateless protocal 
+		
+				local storage 
+				session storage 
+		
+	CSS3:
+=========
+		Cascading style sheet
+		
+		1)inline css   			<h1 style="propname:propvalue;propname:propvalue">
+		2)internal css			<head><style>selector{propname:propvalue;propname:propvalue...}
+		3)external css			mystyles.css <link rel="stylesheet" href="mystyles.css">
+		
+		
+		
+		selector{propname:propvalue;propname:propvalue...}
+		
+		
+					
+					1)all selector		*
+					2)group selector	h1,h2,h3,p...
+					3)element selector	h1
+					4)class selector	.
+					5)id selector		#
+					
+					
+					
+		Colors:
+				colornames,RGB,HEX,HSL,RGBA,HSLA
+			
+		borders
+		margin
+		background
+		padding
+		list
+		...
+Bootstrap:
+============		
+		
+			bootstrap is html ,css,js framework
+		
+		
+			bootstrap.css
+		
+		
+		
+		<html>
+		<head>
+			<link rel="stylesheet" href="mystyles.css">
+			<link rel="stylesheet" href="bootstrap.css">twitter bootstrap 5.x
+		</head>
+		
+	RWD
+	
+	
+	Bootstrap 
+	Grid System Classes
+	
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+	
+	
+	
+	HTML  :it is used to create static web pages 
+	CSS   :it is used to Style static web pages  
+Bootstrap :it is html,css,js framework (bootstrap.css,RWD)
+Javascript:	JS is Implementation of ECMA Script Specification
+	
+	
+	CSS
+		inline			<h1 style="color:red">
+		internal		<head><style>.classname{background-color:yellow;....}
+		external		externalstyles.css  <link rel="stylesheet" href="externalstyles.css">
+
+	JS
+		inline			<body><script>.....</script></body>
+		internal		<head><script>....</scirpt></head>
+		external		external.js  <head><script src="external.js"></script></head>
+	
+	
+Javascript:
+	
+	Variables:
+	==========
+			datatype varname =value //java static typed PL
+			byte age=31;
+
+		JS is dynamic typed PL
+
+				var keyword,let keyword,const	
+
+		var name="welcome";//local variable & global variable
+
+
+
+task1:
+
+TAKE USERNAME AND PASSWORD DYNAMICALLY
+
+	USERNAME:exelr
+	password:excelr@123
+
+	alert	login....
+	else	failure...
+
+
+Arrays:
+========
+
+array is immutable
+
+	var name="excelr";
+	
+	var names[]-->arrays are used to store group of values 
+
+	events,frontend validations,regular expressions,object,date,
+	
+	
+Error Handling:
+===============	
+	Limitations:
+	============
+		system defined error messages
+		abnormal termination
+	
+	
+	Advantages:
+	==========
+		User friednly error messages
+		normal termination
+	
+	
+		try-->error code,catch-->handling,throw--->to throw error,finally-->cleanup code
+	
+		RangeError
+		ReferenceError
+		SyntaxError
+		TypeError
+		URIError
+	
+	OOPS
+	
+		Inheritance			Code Reusability ->performance
+		polymorphisam		
+		encapsulation
+		abstraction
+	
+	
+	
+	ES
+	ECMASCRIPT -->specification
+	javascript--->impelentation
+	
+	
+	
+	AJAX:Loading the data from server and selectively updating the part of web app without reloading the whole page 
+	
+	Asynchronous Javascript And XML
+	
+	synchronous
+	
+	
+	Synchronous = happens at the same time
+	Asynchronous = doesn't happen at the same time
+	
+	XMLHttpRequest(XHR)
+	
+	
+		AJAX
+	JS --------->Server (data)
+	
+			JSON-->javascript object notation
+	
+	
+		var emp=new Employee(123,"suresh",9000,"hyderabad");
+	
+	
+				JSON
+				
+				{
+					"eid":123,
+					"ename":"suresh",
+					"esal":23000,
+					"eadd":"hyderabad"
+				}
+	
+	
+	
+"D:\Java Full Stack\FRONTEND\JAVASCRIPT\Programs\jscript\AJAX Calls\demo.txt"
+
+
+
+JQuery:
+=======
+
+		JS library
+		
+		" write less do more "
+
+
+		<script src="jquery.js file path"
+
+
+
+
+
+JQuery Sytax:
+==============
+		$
+		
+		;
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+GIT:
+====
+		Source code management tool
+
+		task.java
+
+		task1.java
+
+	SVN-->subversion		centralised version control system
+	git -->					distributed version control system
+
+
+		web -->github
+		local-->git 
+
+
+	git init-->it is used intialize repository			
+
+	
+
+
+
+
+
